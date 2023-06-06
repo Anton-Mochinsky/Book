@@ -1,0 +1,140 @@
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+/*------меню выпадающей кнопки----*/
+
+body {
+	background-color: #eee;
+	min-height: 100vh;
+	-webkit-font-smoothing: antialiased;
+}
+
+div.work_zone {
+    border-radius: 10px;
+    max-width: 100%;
+    padding: 30px;
+    margin: 30px;
+    background-color: #ccc;
+}
+
+div.body_left {
+    width: 80px;
+    height: 100%;
+    position: fixed;
+    left: 38px;
+    top: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-top-left-radius: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background: center/80% url('../images/logo.png') no-repeat;
+    border-top-left-radius: 10px;
+}
+
+.loginpane {
+    width: 80px;
+    height: 80px;
+}
+
+.btn_register {
+    width: 80px;
+    height: 80px;
+    background: center/80% url('../images/person-vcard.svg') no-repeat;
+
+}
+
+.tema {
+    width: 80px;
+    height: 80px;
+}
+
+div.body_right {
+    padding-left: 80px;
+    width: 100%;
+    height: 100%
+
+}
+
+div.strukture {
+    display: flex;
+}
+
+div.str_left {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    border: 1px solid black;
+}
+
+div.str_right {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 20%;
+}
+
+.add_inf {
+    display: inline-block;
+    width: 81%;
+
+}
+
+.add_inf_koment {
+    display: inline;
+    padding: 0px 15px 0px;
+
+}
+
+.add_inf_views {
+    display: inline;
+    padding: 0px 15px 0px;
+}
+
+.add_inf_author {
+    display: inline;
+    padding: 0px 15px 0px;
+}
+
+.module_botton {
+    border: 1px solid black;
+}

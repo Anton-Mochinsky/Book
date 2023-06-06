@@ -1,0 +1,24 @@
+{% extends 'foundation/base.html' %}
+
+{% block content %}
+<ul>
+    {% for p in posts %}
+    <li>
+        <h2>{{p.title}}</h2>
+        <p>{{p.content}}</p>
+    </li>
+    {% endfor %}
+    <div class="hr_module_botton">
+        <div class="module_botton">
+            <button class="btn_read">read</button>
+            <ul class="add_inf">
+                <li class="add_inf_koment">7</li> <!--Коменты число --!>
+                <li class="add_inf_views">123124</li>
+                <li class="add_inf_author">автор</li>
+            </ul>
+            <button class="btn_bookmark">bookmark</button>
+        </div>
+    </div>
+</ul>
+{% endblock content %}
+

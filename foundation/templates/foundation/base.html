@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{title}}</title>
+    <link type="text/css" href="{% static 'foundations/css/style.css' %}" rel="stylesheet" />
+    <script src="{% static 'foundations/js/script.js' %}"></script>
+</head>
+<body>
+
+<div class="work_zone">
+    <div class="body">
+        {% block mainmenu %}
+        <div class="body_left">
+            <div class="body_left_in">
+                <header id="header"></header>
+                    <a href="{% url 'home' %}"><div class="logo"></div></a>
+                    <div class="loginpane"><button class="btn_register"><i class="bi bi-person-vcard"></i></button></div>
+                    <div class="menu_drop">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    {% for m in menu %}
+                                        <a href="{{m}}">{{m}}</a>
+                                    {% endfor %}
+                                </div>
+                        </div>
+                    </div>
+                    <button class="tema"></button>
+                </header>
+            </div>
+        </div>
+        <div class="body_right">
+            <div class="strukture">
+                <div class="str_left">
+                    {% block content %}
+                    {% endblock content %}
+                </div>
+                <div class="str_right">
+                    <h1>Модуль с обновлениями</h1>
+                </div>
+            </div>
+        </div>
+        {% endblock mainmenu %}
+    </div>
+</div>
+</body>
+</html>
+
